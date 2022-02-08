@@ -94,7 +94,7 @@ void usart_start_tx_dma(void)
     {
         return;
     }
-    __disable_irq();
+    //__disable_irq();
     if (usart_dma_tx_len == 0 && (usart_dma_tx_len = lwrb_get_linear_block_read_length(&usart_tx_buff)) > 0)
     {
         /* Limit maximal size to transmit at a time */
@@ -112,7 +112,7 @@ void usart_start_tx_dma(void)
         /* Configure DMA */
         HAL_UART_Transmit_DMA(&huart1, (uint8_t *)lwrb_get_linear_block_read_address(&usart_tx_buff), usart_dma_tx_len);
     }
-    __enable_irq();
+    //__enable_irq();
 }
 uint8_t bsp_uart1_send(uint8_t *data, uint16_t len)
 {

@@ -228,6 +228,7 @@ void USART1_IRQHandler(void)
         /** 闲时函数回调 */
         bsp_uart1_rx_idle_cb();
     }
+
 }
 
 /**

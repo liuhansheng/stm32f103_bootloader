@@ -94,7 +94,9 @@ void test_init()
     bsp_uart1_install_rx_install(uart_receive_data);
     while(1)
     {
-        bsp_uart1_send("hello_world!\n",13);
+        char buff[100];
+        sprintf(buff,"hello_world! %d \n",HAL_GetTick());
+        bsp_uart1_send(buff,strlen(buff));
         HAL_Delay(1000);
     }
 }
