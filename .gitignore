@@ -1,0 +1,5 @@
+Output/
+stm32cubemax/
+!stm32cubemax/*.ioc
+.vscode
+*.jlink

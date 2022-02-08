@@ -1,0 +1,125 @@
+<!DOCTYPE CrossStudio_Session_File>
+<session>
+ <Bookmarks/>
+ <Breakpoints groups="Breakpoints" active_group="Breakpoints">
+  <BreakpointListItem trigger="Execute" line="-1" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="0x80032ac" group="Breakpoints" type="Breakpoint" state="2" filename="" useHWbreakpoint="false"/>
+  <BreakpointListItem trigger="Execute" line="-1" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="0x80032c4" group="Breakpoints" type="Breakpoint" state="2" filename="" useHWbreakpoint="false"/>
+  <BreakpointListItem trigger="" line="116" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="STM32F1xx/Src/drive/bsp_uart1.c" useHWbreakpoint="false"/>
+  <BreakpointListItem trigger="" line="143" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="STM32F1xx/Src/drive/bsp_uart1.c" useHWbreakpoint="false"/>
+  <BreakpointListItem trigger="" line="15" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="STM32F1xx/Src/drive/bsp_uarts.c" useHWbreakpoint="false"/>
+  <BreakpointListItem trigger="" line="1400" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="stm32cubemax/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c" useHWbreakpoint="false"/>
+  <BreakpointListItem trigger="" line="3264" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="stm32cubemax/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c" useHWbreakpoint="false"/>
+  <BreakpointListItem trigger="" line="221" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="STM32F1xx/Src/boot/stm32f1xx_it.c" useHWbreakpoint="false"/>
+  <Exceptions set="MemManage;UsageFault_Coprocessor;UsageFault_CheckingError;UsageFault_StateError;BusFault;ExceptionEntryReturnFault;HardFault"/>
+ </Breakpoints>
+ <ExecutionProfileWindow/>
+ <FrameBufferWindow>
+  <FrameBufferWindow bufferHeight="-1" addressSpace="" addressText="" bufferWidth="-1"/>
+ </FrameBufferWindow>
+ <Memory1>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="Executable_1" radix="16" sizeText="" addressText="0x08002206"/>
+ </Memory1>
+ <Memory2>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="Executable_1" radix="16" sizeText="" addressText=""/>
+ </Memory2>
+ <Memory3>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="Executable_1" radix="16" sizeText="" addressText=""/>
+ </Memory3>
+ <Memory4>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="Executable_1" radix="16" sizeText="" addressText=""/>
+ </Memory4>
+ <Project>
+  <ProjectSessionItem path="Executable_1"/>
+  <ProjectSessionItem path="Executable_1;Executable_1"/>
+  <ProjectSessionItem path="Executable_1;Executable_1;CMSIS"/>
+  <ProjectSessionItem path="Executable_1;Executable_1;CMSIS;CORE"/>
+  <ProjectSessionItem path="Executable_1;Executable_1;Library"/>
+  <ProjectSessionItem path="Executable_1;Executable_1;Library;lwrb"/>
+  <ProjectSessionItem path="Executable_1;Executable_1;Library;STM32F1xx_hal"/>
+  <ProjectSessionItem path="Executable_1;Executable_1;Script Files"/>
+  <ProjectSessionItem path="Executable_1;Executable_1;Source Files"/>
+  <ProjectSessionItem path="Executable_1;Executable_1;Source Files;boot"/>
+  <ProjectSessionItem path="Executable_1;Executable_1;Source Files;driver"/>
+  <ProjectSessionItem path="Executable_1;Executable_1;System Files"/>
+ </Project>
+ <Register1>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal;DMA1/ISR;DMA1/IFCR;DMA1/CCR1;DMA1/CNDTR1;DMA1/CPAR1;DMA1/CMAR1;DMA1/CCR2;DMA1/CNDTR2;DMA1/CPAR2;DMA1/CMAR2;DMA1/CCR3;DMA1/CNDTR3;DMA1/CPAR3;DMA1/CMAR3;DMA1/CCR4;DMA1/CNDTR4;DMA1/CPAR4;DMA1/CMAR4;DMA1/CCR5;DMA1/CNDTR5;DMA1/CPAR5;DMA1/CMAR5;DMA1/CCR6;DMA1/CNDTR6;DMA1/CPAR6;DMA1/CMAR6;DMA1/CCR7;DMA1/CNDTR7;DMA1/CPAR7;DMA1/CMAR7;USART1/SR;USART1/DR;USART1/BRR;USART1/CR1;USART1/CR2;USART1/CR3;USART1/GTPR" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context;CPU - Current Context/apsr;DMA1;DMA1/ISR;DMA1/IFCR;DMA1/CCR1;DMA1/CNDTR1;DMA1/CPAR1;DMA1/CMAR1;DMA1/CCR2;DMA1/CNDTR2;DMA1/CPAR2;DMA1/CMAR2;DMA1/CCR3;DMA1/CNDTR3;DMA1/CPAR3;DMA1/CMAR3;DMA1/CCR4;DMA1/CNDTR4;DMA1/CCR5;USART1;USART1/SR;USART1/DR;USART1/BRR;USART1/CR1;USART1/CR2;USART1/CR3;USART1/GTPR" name="Executable_1" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register1>
+ <Register2>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="Executable_1" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register2>
+ <Register3>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="Executable_1" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register3>
+ <Register4>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="Executable_1" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register4>
+ <Threads>
+  <ThreadsWindow showLists=""/>
+ </Threads>
+ <TraceWindow>
+  <Trace enabled="Yes"/>
+ </TraceWindow>
+ <Watch1>
+  <Watches active="1" update="Each Second">
+   <Watchpoint expression="uart1_tx_buff_data" name="uart1_tx_buff_data" radix="-1" linenumber="5" filename="STM32F1xx/Src/drive/bsp_uart1.c"/>
+  </Watches>
+ </Watch1>
+ <Watch2>
+  <Watches active="0" update="Never"/>
+ </Watch2>
+ <Watch3>
+  <Watches active="0" update="Never"/>
+ </Watch3>
+ <Watch4>
+  <Watches active="0" update="Never"/>
+ </Watch4>
+ <Files>
+  <SessionOpenFile windowGroup="DockEditLeft" x="19" y="113" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="SEGGER_THUMB_Startup.s" selected="0" top="75" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="25" y="279" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="STM32F1xx/Source/STM32F103xx_Vectors.s" selected="0" top="258" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="26" y="115" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="STM32F1xx/Source/STM32F1xx_Startup.s" selected="0" top="90" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="67" y="108" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="STM32F1xx/Library/FreeRTOSv202112.00/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c" selected="0" top="84" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="36" y="104" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="STM32F1xx_Flash.icf" selected="0" top="72" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="STM32F103ZE_MemoryMap.xml" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="STM32F103xx_Registers.xml" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="STM32F1xx/Library/FreeRTOSv202112.00/FreeRTOS/Source/portable/MemMang/heap_1.c" selected="0" top="6" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="27" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="STM32F1xx/Library/FreeRTOSv202112.00/FreeRTOS/Source/portable/MemMang/heap_2.c" selected="0" top="6" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="27" y="58" useTextEdit="1" openedFrom="D:/1995work/studyMCU/stm32f1xx_freertos/main.c" useBinaryEdit="0" left="0" path="STM32F1xx/Library/FreeRTOSv202112.00/FreeRTOS/Source/Include/FreeRTOS.h" selected="0" top="42" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="2" y="1259" useTextEdit="1" openedFrom="D:/1995work/studyMCU/stm32f1xx_freertos/STM32F1xx/Library/FreeRTOSv202112.00/FreeRTOS/Source/tasks.c" useBinaryEdit="0" left="0" path="STM32F1xx/Library/FreeRTOSv202112.00/FreeRTOS/Source/Include/task.h" selected="0" top="1237" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="28" y="54" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="STM32F1xx/Src/boot/stm32f1xx_it.h" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="33" y="220" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="STM32F1xx/Src/boot/stm32f1xx_it.c" selected="0" top="198" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="51" y="259" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="STM32F1xx/Src/boot/stm32f1xx_hal_msp.c" selected="0" top="255" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="25" y="78" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="STM32F1xx/Src/boot/stm32f1xx_hal_conf.h" selected="0" top="58" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="101" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="STM32F1xx/Src/boot/main.c" selected="0" top="75" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="STM32F1xx/Src/boot/system_stm32f1xx.c" selected="0" top="57" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="20" y="32" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="STM32F1xx/Src/boot/main.h" selected="0" top="18" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="36" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="stm32cubemax/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h" selected="0" top="20" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="83" y="79" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="stm32cubemax/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h" selected="0" top="270" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="17" y="44" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="STM32F1xx/Library/FreeRTOSv202112.00/FreeRTOS/Source/portable/MemMang/heap_4.c" selected="0" top="33" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="727" useTextEdit="1" openedFrom="D:/1995work/studyMCU/stm32f1xx_freertos/STM32F1xx/Src/boot/main.c" useBinaryEdit="0" left="0" path="STM32F1xx/Library/FreeRTOSv202112.00/FreeRTOS/Source/tasks.c" selected="0" top="713" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="STM32F1xx/Library/FreeRTOSv202112.00/FreeRTOS/Source/timers.c" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="STM32F1xx/Library/FreeRTOSv202112.00/FreeRTOS/Source/stream_buffer.c" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="STM32F1xx/Library/FreeRTOSv202112.00/FreeRTOS/Source/queue.c" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="STM32F1xx/Library/FreeRTOSv202112.00/FreeRTOS/Source/list.c" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="STM32F1xx/Library/FreeRTOSv202112.00/FreeRTOS/Source/event_groups.c" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="STM32F1xx/Library/FreeRTOSv202112.00/FreeRTOS/Source/croutine.c" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="34" y="97" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="STM32F1xx/Library/FreeRTOSv202112.00/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h" selected="0" top="75" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="18" y="33" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="STM32F1xx/Src/boot/boot.c" selected="0" top="34" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="34" y="118" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="STM32F1xx/Src/boot/FreeRTOSConfig.h" selected="0" top="6" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="21" y="148" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="stm32cubemax/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h" selected="0" top="132" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="3" y="1926" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="stm32cubemax/Drivers/CMSIS/Core/Include/core_cm3.h" selected="0" top="1909" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="369" useTextEdit="1" openedFrom="D:/1995work/studyMCU/stm32f1xx_bootloader/STM32F1xx/Src/boot/main.c" useBinaryEdit="0" left="0" path="stm32cubemax/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" selected="0" top="351" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="115" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="STM32F1xx/Src/drive/bsp_uart1.c" selected="0" top="86" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="356" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="STM32F1xx/library/lwrb/lwrb/src/lwrb/lwrb.c" selected="0" top="333" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="18" y="9" useTextEdit="1" openedFrom="D:/1995work/studyMCU/stm32f1xx_bootloader/STM32F1xx/Src/boot/stm32f1xx_it.c" useBinaryEdit="0" left="0" path="STM32F1xx/Src/drive/bsp_uart1.h" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="15" y="41" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="STM32F1xx/Src/drive/system.c" selected="0" top="27" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="348" useTextEdit="1" openedFrom="D:/1995work/studyMCU/stm32f1xx_bootloader/STM32F1xx/Src/drive/bsp_uart1.c" useBinaryEdit="0" left="0" path="stm32cubemax/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h" selected="0" top="331" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="131" useTextEdit="1" openedFrom="D:/1995work/studyMCU/stm32f1xx_bootloader/STM32F1xx/Src/drive/system.c" useBinaryEdit="0" left="0" path="stm32cubemax/Drivers/CMSIS/Core/Include/cmsis_gcc.h" selected="0" top="123" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="16" y="1" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="STM32F1xx/Src/drive/bsp_uarts.c" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="47" y="7" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="STM32F1xx/Src/drive/bsp_uarts.h" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="211" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="stm32cubemax/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c" selected="0" top="175" codecName=""/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="1446" useTextEdit="1" openedFrom="D:/1995work/studyMCU/stm32f1xx_bootloader/STM32F1xx/Src/drive/bsp_uart1.c" useBinaryEdit="0" left="0" path="stm32cubemax/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c" selected="1" top="1428" codecName=""/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="6" y="163" useTextEdit="1" openedFrom="D:/1995work/studyMCU/stm32f1xx_bootloader/STM32F1xx/Src/drive/bsp_uart1.c" useBinaryEdit="0" left="0" path="stm32cubemax/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h" selected="0" top="152" codecName="Default"/>
+ </Files>
+ <ARMCrossStudioWindow activeProject="Executable_1" fileDialogDefaultFilter="*" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="D:/1995work/studyMCU/stm32f1xx_bootloader/STM32F1xx/Src/drive" debugSearchPath="" autoConnectCapabilities="3711"/>
+</session>
