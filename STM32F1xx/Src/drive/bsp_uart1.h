@@ -5,7 +5,7 @@ extern  UART_HandleTypeDef huart1;
 void bsp_uart1_init(void);
 
 void bsp_uart1_dma_tx_cplt_cb(void);
-bool bsp_get_uart_dma_tx_cplt_flag(void)
+bool bsp_get_uart_dma_tx_cplt_flag(void);
 
 void bsp_uart1_dma_rx_halt_cb(void);
 void bsp_uart1_dma_rx_cplt_cb(void);
