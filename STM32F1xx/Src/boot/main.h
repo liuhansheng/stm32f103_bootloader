@@ -33,6 +33,9 @@ extern "C" {
 #include <stdbool.h>
 #include "stm32f1xx_hal.h"
 #include "stm32f1xx.h"
+
+#define ARRAY_LEN(x) (sizeof(x)/sizeof((x)[0]))
+#define MIN(x,y) ((x) < (y)) ? (x) : (y)
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 

@@ -47,6 +47,7 @@ extern "C" {
 #define HAL_ETH_MODULE_ENABLED
 #define HAL_EXTI_MODULE_ENABLED
 #define HAL_FLASH_MODULE_ENABLED
+#define HAL_FLASH_EX_MODULE_ENABLED
 #define HAL_GPIO_MODULE_ENABLED
 #define HAL_HCD_MODULE_ENABLED
 #define HAL_I2C_MODULE_ENABLED
@@ -294,6 +295,10 @@ extern "C" {
 
 #ifdef HAL_FLASH_MODULE_ENABLED
 #include "stm32f1xx_hal_flash.h"
+#endif /* HAL_FLASH_MODULE_ENABLED */
+
+#ifdef HAL_FLASH_EX_MODULE_ENABLED
+#include "stm32f1xx_hal_flash_ex.h"
 #endif /* HAL_FLASH_MODULE_ENABLED */
 
 #ifdef HAL_SRAM_MODULE_ENABLED

@@ -200,9 +200,15 @@ void SysTick_Handler(void)
 
 /* USER CODE BEGIN 1 */
 
+
+/******************************************************************************/
+/******************************************************************************/
+/**
+  * @brief This function handles DMA1 channel6 global interrupt.
+  */
 void DMA1_Channel6_IRQHandler(void)
 {
-  //HAL_DMA_IRQHandler(huart2.hdmarx);
+    // HAL_DMA_IRQHandler(huart2.hdmarx);
 }
 
 /**
@@ -210,7 +216,7 @@ void DMA1_Channel6_IRQHandler(void)
   */
 void DMA1_Channel7_IRQHandler(void)
 {
-  //HAL_DMA_IRQHandler(huart2.hdmatx);
+    // HAL_DMA_IRQHandler(huart2.hdmatx);
 }
 /* USER CODE END 1 */
 /******************************************************************************/
@@ -220,15 +226,14 @@ void USART1_IRQHandler(void)
     /** Interrupt handling. */
     HAL_UART_IRQHandler(&huart1);
 
-    if (__HAL_UART_GET_FLAG(&huart1, UART_FLAG_IDLE) != RESET)
-    {
+     if (__HAL_UART_GET_FLAG(&huart1, UART_FLAG_IDLE) != RESET)
+     {
         /** Clear idle line interrupt flag. */
         __HAL_UART_CLEAR_IDLEFLAG(&huart1);
 
         /** 闲时函数回调 */
         bsp_uart1_rx_idle_cb();
-    }
-
+     }
 }
 
 /**

@@ -9,7 +9,6 @@ typedef enum
     DO_LED_GREEN = 1,
     DO_LED_BLUE = 2,
 } do_map_enum;
-#define ARRAY_LEN(x) (sizeof(x) / sizeof((x)[0]))
 typedef struct
 {
     GPIO_TypeDef *gpio;  // GPIO address
