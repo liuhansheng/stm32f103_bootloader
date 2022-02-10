@@ -47,12 +47,5 @@
 
  void bsp_flash_write_word(uint32_t offfset, const uint8_t *ptr, uint32_t len)
  {
-     HAL_FLASH_Unlock();
-
-     for (uint32_t i = 0; i < len / 4; i++)
-     {
-         HAL_FLASH_Program(FLASH_TYPEPROGRAM_WORD, offfset + (i), ptr[i]);
-     }
-
-     HAL_FLASH_Lock();
+     ;
  }

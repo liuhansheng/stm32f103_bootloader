@@ -195,24 +195,22 @@ static void erase_all(void)
 {
     bsp_flash_erase(APP_INFO_ADDRESS, 384 * 1024); /** 384 + 128 = 512 */
 }
+
 static void read(uint32_t start_addr, void *data, uint32_t data_len)
 {
     memcpy(data, (void *)(FW_START + start_addr), data_len);
 }
-
 static void write(uint32_t start_addr, const void *data, uint32_t data_len)
 {
     const uint8_t *p = data;
-
+    static uint32_t temp_data;
     HAL_FLASH_Unlock();
     for (uint32_t i = 0; i < (data_len / 4); i++)
     {
-        HAL_FLASH_Program(FLASH_TYPEPROGRAM_WORD, FW_START + start_addr +  i * 4, *(p + 4));
+        temp_data = (*(uint8_t*)(data + i * 4)) | (*(uint8_t*)(data + i * 4 + 1)) << 8 | (*(uint8_t*)(data + i * 4 + 2)) << 16 | (*(uint8_t*)(data + i * 4 + 3)) << 24;
+        HAL_FLASH_Program(FLASH_TYPEPROGRAM_WORD, FW_START + start_addr +  i * 4,  temp_data);
     }
     HAL_FLASH_Lock();
-    uint32_t data_read[data_len / 4];
-    read(FW_START + start_addr,data_read,data_len);
-    printf("data %s", data_read);
 }
 
 static bool is_app_valid(void)
