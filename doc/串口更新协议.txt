@@ -1,0 +1,53 @@
+1. 进入bootloader模式：
+    1.1 主机发送：
+        uint8_t [4] = {0xFD, 0x08, 0x00, 0x00, 0xE5, 0x01, 0x01, 0x76, 0x03, 0x00, 0x62, 0x6F, 0x6F, 0x74, 0x9D, 0x90, 0x90, 0x8B, 0xC0, 0xDA}
+    1.2 等待MCU回应:
+        uint8_t [2] = {0x12, 0x10}
+    1.3 超时无应答，主机发送：
+        uint8_t [2] = {0x21, 0x20}
+    1.4 等待从机应答:
+        uint8_t [2] = {0x12, 0x10}
+    1.5 从机有应答进入同步
+2. 同步：
+    2.1 主机发送：
+        uint8_t [2] = {0x21, 0x20}
+    2.2 从机应答：
+        uint8_t [2] = {0x12, 0x10}
+    2.3 如果从机应答，进入全片擦除
+3. 全片擦除：
+    3.1 主机发送：
+        uint8_t [2] = {0x23, 0x20}
+    3.2 从机擦除完成应答：
+        uint8_t [2] = {0x12, 0x10}
+    3.3 开始数据写入
+4. 数据写入：
+    4.1 主机发送：
+        uint8_t [n+4] = {0x27, n, data..., crc8,0x20}
+		crc8校验data
+        非最后一包数据的时候 n = 0xfc,
+        最后一包数据 n = 1~0xfc
+    4.2 从机应答：
+        uint8_t [2] = {PROTO_INSYNC,0x10}
+5. 获取CRC：
+    5.1 主机发送：
+        uint8_t [2] = {0x29, 0x20}
+    5.2 从机应答:
+        uint8_t [6] = {crc0, crc1, crc2, crc3, PROTO_INSYNC,  0x10}
+
+crc0,crc1, crc2, crc3固件校验码，正常是0
+
+6.跳转app
+    6.1 主机发送 :
+        uint_t[2] = {0x 30,0x20}
+    6.2.从机回应：
+        uint8_t [2] = {PROTO_INSYNC,0x10}
+// protocol bytes
+#define PROTO_INSYNC 0x12 // 'in sync' byte sent before status
+#define PROTO_EOC    0x20 // end of command
+
+// Reply bytes
+#define PROTO_OK              0x10 // INSYNC/OK      - 'ok' response
+#define PROTO_FAILED          0x11 // INSYNC/FAILED  - 'fail' response
+#define PROTO_INVALID         0x13 // INSYNC/INVALID - 'invalid' response for bad commands
+#define PROTO_BAD_SILICON_REV 0x14 // On the F4 series there is an issue with < Rev 3 silicon
+#define PROTO_RESERVED_0X15   0x15 // Reserved

@@ -12,7 +12,7 @@
  }
  void bsp_flash_erase(uint32_t base_addr, uint32_t size)
  {
-     int8_t page_num = -1, Nbpage = 0;
+     int16_t page_num = -1, Nbpage = 0;
 
      for (uint8_t i = 0; i < ARRAY_LEN(flash_page_addr) - 1; i++)
      {
@@ -45,7 +45,7 @@
      HAL_FLASH_Lock();
  }
 
- void bsp_flash_write_bytes(uint32_t offfset, const uint8_t *ptr, uint32_t len)
+ void bsp_flash_write_word(uint32_t offfset, const uint8_t *ptr, uint32_t len)
  {
      HAL_FLASH_Unlock();
 

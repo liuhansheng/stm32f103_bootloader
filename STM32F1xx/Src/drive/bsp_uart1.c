@@ -1,9 +1,14 @@
  #include "bsp_uart1.h"
  #include "lwrb/lwrb.h"
  UART_HandleTypeDef huart1;
- static uint8_t uart1_tx_buff_data[256];
  static uint8_t uart1_rx_dma_buffer[256];
+
  static lwrb_t usart_tx_buff;
+ static uint8_t uart1_tx_buff_data[256];
+
+ static lwrb_t usart_rx_buff;
+ static uint8_t uart1_rx_buff_data[256];
+
  static size_t usart_dma_tx_len;
  void uart_config(void)
  {
@@ -29,6 +34,7 @@
  void bsp_uart1_init(void)
  {
      lwrb_init(&usart_tx_buff, uart1_tx_buff_data, sizeof(uart1_tx_buff_data));
+     lwrb_init(&usart_rx_buff, uart1_rx_buff_data, sizeof(uart1_rx_buff_data));
      uart_config();
  }
 
@@ -59,28 +65,20 @@
 
      if (pos != old_pos)
      {
-         /* Check change in received data */
          if (pos > old_pos)
          {
-             /* Current position is over previous one */
-             /* We are in "linear" mode */
-             /* Process data directly by subtracting "pointers" */
-             usart_process_data(&uart1_rx_dma_buffer[old_pos], pos - old_pos);
+            lwrb_write(&usart_rx_buff,&uart1_rx_dma_buffer[old_pos], pos - old_pos);
          }
          else
          {
-             /* We are in "overflow" mode */
-             /* First process data to the end of buffer */
-             usart_process_data(&uart1_rx_dma_buffer[old_pos], ARRAY_LEN(uart1_rx_dma_buffer) - old_pos);
+             lwrb_write(&usart_rx_buff,&uart1_rx_dma_buffer[old_pos], ARRAY_LEN(uart1_rx_dma_buffer) - old_pos);
 
-             /* Check and continue with beginning of buffer */
              if (pos > 0)
              {
-                 usart_process_data(&uart1_rx_dma_buffer[0], pos);
+                lwrb_write(&usart_rx_buff,&uart1_rx_dma_buffer[0], pos);
              }
          }
      }
-
      old_pos = pos; /* Save current position as old */
  }
  void bsp_uart1_rx_entry(void)
@@ -127,12 +125,8 @@
 
  void bsp_uart1_dma_tx_cplt_cb(void)
  {
-     /* Data sent, ignore these */
      lwrb_skip(&usart_tx_buff, usart_dma_tx_len);
-
      usart_dma_tx_len = 0;
-
-     /* Try to send more data */
      usart_start_tx_dma();
  }
  bool bsp_get_uart_dma_tx_cplt_flag(void)
@@ -152,3 +146,9 @@
  {
       bsp_uart1_rx_entry();
  }
+
+int  uart_buff_read(void *data, uint32_t len)
+{
+    return lwrb_read(&usart_rx_buff,data,len);
+}
+

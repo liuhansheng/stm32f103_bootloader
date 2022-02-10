@@ -10,6 +10,6 @@ bool bsp_get_uart_dma_tx_cplt_flag(void);
 void bsp_uart1_dma_rx_halt_cb(void);
 void bsp_uart1_dma_rx_cplt_cb(void);
 void bsp_uart1_rx_idle_cb(void);
+int  uart_buff_read(void *data, uint32_t len);
 
 uint8_t bsp_uart1_send(uint8_t *data, uint16_t len);
-void bsp_uart1_install_rx_install(usart_rx_handler_cb cb);

@@ -48,14 +48,19 @@
         <file file_name="STM32F1xx/Src/boot/stm32f1xx_it.h" />
         <file file_name="STM32F1xx/Src/boot/system_stm32f1xx.c" />
         <file file_name="STM32F1xx/Src/boot/main.c" />
+        <file file_name="STM32F1xx/Src/boot/app_handler.c" />
       </folder>
       <folder Name="driver">
         <file file_name="STM32F1xx/Src/drive/system.c" />
         <file file_name="STM32F1xx/Src/drive/bsp_uart1.c" />
         <file file_name="STM32F1xx/Src/drive/bsp_uarts.c" />
         <file file_name="STM32F1xx/Src/drive/bsp_flash.c" />
+        <file file_name="STM32F1xx/Src/drive/bsp_crc32.c" />
+        <file file_name="STM32F1xx/Src/drive/bsp_io_out.c" />
       </folder>
-      <folder Name="protocol" />
+      <folder Name="protocol">
+        <file file_name="STM32F1xx/Src/protocol/uart_boot.c" />
+      </folder>
     </folder>
     <folder Name="System Files">
       <file file_name="SEGGER_THUMB_Startup.s" />
@@ -117,7 +122,8 @@
     </folder>
     <configuration
       Name="Debug"
-      debug_register_definition_file="STM32F103xx_Registers.xml" />
+      debug_register_definition_file="STM32F103xx_Registers.xml"
+      linker_output_format="bin" />
     <folder Name="CMSIS">
       <folder Name="CORE">
         <file file_name="stm32cubemax/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h" />
