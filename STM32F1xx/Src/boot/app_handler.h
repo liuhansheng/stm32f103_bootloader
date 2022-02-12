@@ -5,7 +5,7 @@
 #define BOOT_COMM_OVER_TIME 1500
 #define FLASH_DEFINE_NUM    0xFFFFFFFF
 
-#define APP_INFO_ADDRESS               0x08020000
+#define APP_INFO_ADDRESS               0x08020000 /**64k * 2  bootloader */
 #define APP_INFO                       ((app_info_t *)APP_INFO_ADDRESS)
 #define APP_START_ADDRESS              (0x08020200)
 #define APP_START_ADDRESS_ARRAY(index) (*((volatile uint32_t *)(APP_START_ADDRESS + index)))
@@ -14,7 +14,7 @@
 #define MAGIC_NUM_UAVCAN_BOOT 0xA0A0A0A0
 #define MAGIC_NUM_UART_BOOT   0x746F6F62 // "boot"
 
-/** APP 的信息字� 头部插入 512 字节 */
+/** APP 的信息字� 头部插入 512 字节 */
 typedef struct
 {
     uint32_t magic;

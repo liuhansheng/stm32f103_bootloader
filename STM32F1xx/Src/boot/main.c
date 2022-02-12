@@ -51,7 +51,7 @@ void boot_task(boot_type_e type)
     {
     case BOOT_TYPE_NONE:
         /* code */
-        // boot_over_time_jump();
+        boot_over_time_jump();
         break;
     case BOOT_TYPE_UART:
         boot_uart_handle_update();

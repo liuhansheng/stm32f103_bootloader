@@ -74,7 +74,7 @@ void bsp_led_flashing(void)
 {
     static uint32_t tick = 0;
 
-    if (HAL_GetTick() > tick + 1000)
+    if (HAL_GetTick() > tick + 50)
     {
         tick = HAL_GetTick();
         bsp_write_do_toggle(DO_LED_BLUE); // System Running
