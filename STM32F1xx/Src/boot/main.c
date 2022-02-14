@@ -62,6 +62,7 @@ void boot_task(boot_type_e type)
     }
 }
 int main( void ) 
+
 { 
     sys_init();
     bsp_crc32_init();
