@@ -2,7 +2,7 @@
 
 #include "main.h"
 
-#define BOOT_COMM_OVER_TIME 2000
+#define BOOT_COMM_OVER_TIME 1000
 #define FLASH_DEFINE_NUM    0xFFFFFFFF
 
 #define APP_INFO_ADDRESS               0x08020000 /**64k * 2  bootloader */
